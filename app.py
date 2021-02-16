@@ -11,10 +11,6 @@ def index():
 @app.route('/predict')
 def index2():
     prediction_value = predict_f()
-    # if news is None:
-    #     print('taken1', news)
-    # else:
-    #     print('noa',news)
     return render_template('bootstrap_with_prediction.html', prediction= f'Expected variation in NIFTY50 stock exchange would be: {prediction_value}' )
 
 # check
